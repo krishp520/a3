@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="icon" href="KP1.png">
+    <link rel="Stylesheet" href="styles.css">
+    
+    <title>My learning resources</title>
+
+    <nav>
+        <div id="navigation">
+            <a href="index.html">HOME </a>
+            <a href="page1.html">ABOUT ME  </a>
+            <a href="page2.html">LEARNING RESOURCES</a>
+        </div>
+    </nav>
+
+    <header>
+
+    <h1>
+        MY JOURNEY OF MAKING WEBSITE 
+    </h1>
+    </header>
+    
+    <body>
+        <p> 
+            My journey of this started at my university.I started learning HTML in my course and then I looked online for some learning places. 
+            The prerequisite for making a website is having a good understanding of HTML language. Without HTML, making a website is not possible. 
+            Nowadays, finding resources for learning computer languages is very easy. These are the places from where I have learnt to make a website.
+        </p>
+
+        <ol>
+                <li>Classroom learning - Prof. Rina Wehbe</li><br>
+                <li>Youtube<br>       
+                </li><br>
+                <li>HTML Cheatsheet</li><br>
+                <li>w3schools</li><br>
+        </ol>
+
+        <h3>CONTACT ME</h3>
+
+        <ul>
+                <li>Email: ----@gmail.com</a></li><br>
+                <li>Facebook: Krish Patel</li><br>
+                <li>LinkedIn: Krish Patel</li><br>
+        </ul>
+
+        <h3>
+            FEEDBACK AND SUGGESTIONS
+        </h3>
+
+        <button onclick="toggleform()" id="toggleform">Hide Feedback Form</button>
+
+        <form id="form1"  >
+            
+            <label for="firstname"> First name : </label>
+            <input type="text" id="firstname" name="firstname"placeholder="First Name"> 
+            <br>
+            
+            <label for="lastname"> Last name : </label>
+            <input type="text" id="lastname" name="lastname"placeholder="Last Name" >
+            <br>
+            
+            <label for="email">Email-id   : </label>
+            <input type="email" id="email" name="email"placeholder="Email"><br>
+            
+            <p>If you have any feedback or any suggestions on the website, please fill the form below</p>
+
+            <label for="feedback">Feedback : </label>
+            <br>
+            <input type="text" id="feedback" name="feedback"placeholder="Any feedback?"><br><br>
+            
+            <label for="suggestions">Suggestions : 
+            </label>
+            <br>
+            <input type="text" id="suggestions" name="suggestions" placeholder="Suggestions"></placeholder><br><br>
+            
+            <input onclick="formSubmit()" type="submit" value="Submit">
+          </form> 
+          
+    </body>
+    <script src="./myjs.js"></script>
+</html>

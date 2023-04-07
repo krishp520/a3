@@ -1,0 +1,273 @@
+*{
+    border: 1%;
+}
+h3 + p{
+    padding-top: 0.1em;
+}
+#navigation{
+    background-color: beige;
+    float: right;
+    display: flex;
+    padding-right: 3em;
+    padding-top: 0.4em;
+}
+#navigation > a{
+    padding: 1.8em;
+    color: darkslategrey;
+    font-size: 14pt;
+}
+header{
+    background-color: beige;
+    padding: 0.73em;
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+}
+h2{
+    color: rgb(83, 185, 83);
+    padding: 0.5em 0.5em 0.5em 0.4em;
+    font-size: 22pt;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-image: url(gradient1.png);
+    background-size: cover;
+}
+.inspiration > h2{
+    background-color: beige;
+    padding: 0.72em;
+}
+h3{
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: azure;
+    color: teal;
+}
+.myself{
+    display: flex;
+    flex-direction: row;
+}
+img[alt="My Photo"]{
+    padding: 1em 1.5em 1em 1.5em;
+    border: 1px solid white;
+    box-shadow: 0 0 1em rgb(132, 132, 132);
+    border-radius: 1em;
+}
+.myself > p{
+    font-size: 15pt;
+    margin-left: 1cm;
+    padding-top: 8px;
+    padding-bottom: 260px;
+}
+body > p{
+    margin-left: 1cm;
+}
+.hobby > ol > li , .hobby > ol > ul > li{
+    font-size: 14pt;
+    padding: 2mm;
+}
+.table{
+    padding: 2em;
+}
+th {
+    padding: 1em;
+    font-size: 18pt;
+    color: green;
+}
+th ~ th{
+    padding: 1em;
+    font-size: 15pt;
+    color: green;
+}
+th > a{
+    color: green;
+}
+h4{
+    color: teal;
+    font-size: 20pt;
+    padding: 4mm 0 2mm 0;
+}
+
+#title{
+    float: center;
+    padding-bottom: 1mm;
+    background-color: azure;
+    color: teal;
+}
+p{
+    font-size: 16pt;
+    padding: 3mm 0 3mm 0;
+}
+.aboutbody > img{
+    float: left;
+    padding: 1em 1.5em 1em 1.5em;
+    border: 1px solid white;
+    box-shadow: 0 0 1em rgb(132, 132, 132);
+    border-radius: 1em;
+    height:400px;
+    width:600px;
+}
+.aboutbody > #p1 , .aboutbody > #p2 , .aboutbody > #p3  {
+    padding-left: 17cm;
+    padding-bottom: 3mm;
+    font-size: 13pt;
+    margin-left: 1cm;
+}
+#p4{
+    margin-left: 1cm;
+    font-size: 14pt;
+}
+.aboutbody > ul > li{
+    font-size: 14pt;
+    padding: 2mm;
+    margin-left: 4mm;
+}
+li  {
+    font-size: 14pt;
+    padding: 0.5mm;
+    margin-left: 4mm;
+}
+#p3::after{
+    content: "\a \a";
+    white-space: pre;
+}
+form{
+    padding: 1em;
+    margin-left: 5mm;
+}
+#firstname , #lastname , #email{
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 4px;
+}
+#feedback , #suggestions{
+    padding: 1em;
+    margin: 1em;
+    border-radius: 4px;
+    width: 250px;
+    height: 30px;
+}
+input{
+    padding: 0.5em 0.25em 0.5em 0.5em;
+    margin: 1em;
+}
+#toggleform{
+    margin-left: 2.7em;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.enhance {
+    padding: 1mm;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+  
+.enhance:hover {
+    transform: scale(1.2);
+    filter: brightness(110%);
+    z-index: 2;
+}
+
+/* Mobile Layout */
+@media screen and (max-width:800px) {
+    #navigation>a{
+        font-size: 11pt;
+        margin-left: 1cm;
+    }
+    h1{
+        padding-left: 20%;
+    }
+    h2{
+        font-size: 14pt;
+    }
+    h3{
+        font-size: 11pt;
+        padding-left: 2.5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+    img[alt="My Photo"]{
+        width: 150px;
+        height: 200px;
+    }
+    .myself>p, li, .hobby > ol > li, p{
+        font-size: 11pt;
+    }
+    .myself > p{
+        padding-bottom: 20px;
+    }
+    tr>th, tr>th>a{
+        font-size: 11pt;
+    }
+    .aboutbody>img{
+        height:200px;
+        width: 300px;
+        float: right;
+    }
+    .aboutbody > #p1, .aboutbody > #p2, .aboutbody > #p3, .aboutbody > #p4{
+        font-size: 11pt;
+        padding-left: 0cm;
+        padding-bottom: 3mm;
+        margin-left: 1cm;
+    }
+    .aboutbody>ul>li{
+        font-size: 11pt;
+    }
+    #firstname , #lastname , #email, #feedback, #suggestions{
+        font-size: 7pt;
+    }
+}
+
+/* Tablet Layout */
+@media screen and (min-width:801px) and (max-width:1300px){
+    #navigation>a{
+        font-size: 13pt;
+        padding-top: 1cm;
+        margin-left: 1cm;
+    }
+    h2{
+        font-size: 15pt;
+    }
+    h3{
+        font-size: 13pt;
+        padding-left: 2.5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+    img[alt="My Photo"]{
+        width: 200px;
+        height: 267px;
+    }
+    .myself>p, li, .hobby > ol > li, p{
+        font-size: 13pt;
+    }
+    .myself > p{
+        padding-bottom: 40px;
+    }
+    tr>th, tr>th>a{
+        font-size: 13pt;
+    }
+    .aboutbody>img{
+        height:300px;
+        width:450px;
+        float: right;
+    }
+    .aboutbody > #p1, .aboutbody > #p2, .aboutbody > #p3, .aboutbody > #p4{
+        font-size: 13pt;
+        padding-left: 0cm;
+        padding-bottom: 3mm;
+        margin-left: 1cm;
+    }
+    .aboutbody>ul>li{
+        font-size: 13pt;
+    }
+    #firstname , #lastname , #email, #feedback, #suggestions{
+        font-size: 10px;
+    }
+}
